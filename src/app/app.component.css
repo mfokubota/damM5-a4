@@ -11,3 +11,7 @@ app-footer {
 .space {
     flex-grow: 1;
 }
+
+td {
+    border: solid black 1px;
+}

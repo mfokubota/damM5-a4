@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
+import { Bird } from '../model/bird'
 
-/**
- * Refactor `data` to a new file.
- * Ctrl + . will reveal the refactoring options.
- */
 export const data = {
   app: {
     generalInformation: {
       title: 'Development Environments'
     },
     footer: {
-      author: 'Ernest Bofill',
-      email: 'ebofill1@inscastellet.cat'
+      author: 'Murilo Kubota',
+      email: 'mferreira@inscastellet.cat'
     }
   }
 }
@@ -23,12 +20,14 @@ export const data = {
 })
 export class AppComponent {
   title: string;
+  bird: Bird = new Bird("Eagle", 300, 50);
+
 
   constructor() {
     this.title = this.titleOfTheApplication()
   }
 
   private titleOfTheApplication(): string {
-    return data.;
+    return "Murilo WebApp";
   }
 }
